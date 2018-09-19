@@ -24,5 +24,10 @@ namespace DocConverter
         {
             InitializeComponent();
         }
+
+        private void ShowRtfToXamlWindow_Click(object sender, RoutedEventArgs e)
+        {
+            new RtfToXamlWindow().Show();
+        }
     }
 }

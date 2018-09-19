@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DocConverter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Doc Converter" Height="400" Width="300" WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="16">
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock>Author:</TextBlock>
+            <TextBlock FontFamily="NSimSun" FontStyle="Italic" Margin="5,0,0,0">Jacob Ni</TextBlock>
+            <TextBlock Margin="10,0,0,0">Mail:</TextBlock>
+            <TextBlock FontFamily="NSimSun" FontStyle="Italic" Margin="5,0,0,0">nihang1212@126.com</TextBlock>
+        </StackPanel>
+
+        <Button Content="RTF To XAML" Name="ShowRtfToXamlWindow" Click="ShowRtfToXamlWindow_Click"/>
+    </StackPanel>
 </Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="DocConverter.RtfToXamlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocConverter"
+        mc:Ignorable="d"
+        Title="RTF To XAML" Height="450" Width="800">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="LoadFile" Content="Load File" Click="LoadFile_Click" Height="30" Width="100"/>
+            <Button Name="SaveFile" Content="Save File" Click="SaveFile_Click" Height="30" Width="100" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <GroupBox Header="Preview" Grid.Row="1" Padding="10">
+            <RichTextBox Name="RichTextBox">
+                <FlowDocument/>
+            </RichTextBox>
+        </GroupBox>
+    </Grid>
+</Window>
